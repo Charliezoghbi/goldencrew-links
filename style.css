@@ -262,7 +262,7 @@ h1 {
 @media (max-width: 520px) {
   body {
     padding: 12px;
-    align-items: flex-start;
+    /* align-items: flex-start; */
   }
 
   .card {
