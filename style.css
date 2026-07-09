@@ -123,7 +123,7 @@ body::after {
   flex-shrink: 0;
 }
 
-.title-row span::after {
+/* .title-row span::after {
   content: "";
   width: 8px;
   height: 8px;
@@ -132,7 +132,7 @@ body::after {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-}
+} */
 
 .title-row span:first-child::after {
   right: -15px;
