@@ -1,155 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Golden Crew</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden Crew</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-<style>
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-  font-family:Arial, sans-serif;
-}
-
-body{
-  min-height:100vh;
-  background:linear-gradient(135deg,#050505,#1a1a1a);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:25px;
-}
-
-.card{
-  width:100%;
-  max-width:430px;
-  background:#ffffff;
-  border-radius:28px;
-  padding:35px 25px;
-  text-align:center;
-  box-shadow:0 20px 45px rgba(0,0,0,0.45);
-  border:3px solid #d4af37;
-}
-
-.logo{
-  width:160px;
-  height:160px;
-  border-radius:50%;
-  object-fit:cover;
-  margin-bottom:18px;
-  border:3px solid #d4af37;
-}
-
-h1{
-  color:#111;
-  font-size:32px;
-  letter-spacing:2px;
-}
-
-.subtitle{
-  color:#b8860b;
-  margin:8px 0 28px;
-  font-size:16px;
-  letter-spacing:1px;
-}
-
-.socials{
-  display:flex;
-  flex-direction:column;
-  gap:16px;
-}
-
-.social{
-  display:flex;
-  align-items:center;
-  gap:16px;
-  text-decoration:none;
-  padding:16px 18px;
-  border-radius:16px;
-  color:white;
-  background:#111;
-  border:2px solid #d4af37;
-  transition:0.25s;
-}
-
-.social:hover{
-  transform:translateY(-3px);
-  background:#d4af37;
-  color:#111;
-}
-
-.icon{
-  font-size:28px;
-  width:38px;
-  color:#d4af37;
-}
-
-.social:hover .icon{
-  color:#111;
-}
-
-.text{
-  text-align:left;
-}
-
-.text strong{
-  display:block;
-  font-size:21px;
-}
-
-.text span{
-  font-size:14px;
-  color:#d4af37;
-}
-
-.social:hover span{
-  color:#111;
-}
-</style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="card">
+  <div class="background-decoration top-left"></div>
+  <div class="background-decoration bottom-right"></div>
 
-  <img src="goldencrew_logo.png" alt="Golden Crew Logo" class="logo">
+  <main class="card">
 
-  <h1>Golden Crew</h1>
-  <div class="subtitle">Property Maintenance</div>
+    <div class="logo-circle">
+      <img src="goldencrew_logo.png" alt="Golden Crew Logo">
+    </div>
 
-  <div class="socials">
+    <div class="title-row">
+      <span></span>
+      <h1>Golden Crew</h1>
+      <span></span>
+    </div>
 
-    <a class="social" href="https://www.linkedin.com/in/john-r-465703a4?utm_source=share_via&utm_content=profile&utm_medium=member_ios">
-      <i class="fab fa-linkedin-in icon"></i>
-      <div class="text">
-        <strong>LinkedIn</strong>
-        <span>Connect with us</span>
-      </div>
-    </a>
+    <p class="subtitle">Property Maintenance</p>
 
-    <a class="social" href="https://www.instagram.com/goldencrewpropertymaintenance?igsh=MTF6MGZzeDF6cGJwaQ==">
-      <i class="fab fa-instagram icon"></i>
-      <div class="text">
-        <strong>Instagram</strong>
-        <span>Follow our journey</span>
-      </div>
-    </a>
+    <div class="small-divider">
+      <span></span>
+      <i class="fa-solid fa-diamond"></i>
+      <span></span>
+    </div>
 
-    <a class="social" href="https://www.facebook.com/share/1BACfASXW1/?mibextid=wwXIfr">
-      <i class="fab fa-facebook-f icon"></i>
-      <div class="text">
-        <strong>Facebook</strong>
-        <span>Like our page</span>
-      </div>
-    </a>
+    <section class="socials">
 
-  </div>
+      <a class="social" href="https://www.linkedin.com/in/john-r-465703a4?utm_source=share_via&utm_content=profile&utm_medium=member_ios">
+        <div class="social-icon">
+          <i class="fab fa-linkedin-in"></i>
+        </div>
 
-</div>
+        <div class="social-text">
+          <strong>LinkedIn</strong>
+          <span>Connect with us</span>
+        </div>
+
+        <i class="fa-solid fa-chevron-right arrow"></i>
+      </a>
+
+      <a class="social" href="https://www.instagram.com/goldencrewpropertymaintenance?igsh=MTF6MGZzeDF6cGJwaQ==">
+        <div class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </div>
+
+        <div class="social-text">
+          <strong>Instagram</strong>
+          <span>Follow our journey</span>
+        </div>
+
+        <i class="fa-solid fa-chevron-right arrow"></i>
+      </a>
+
+      <a class="social" href="https://www.facebook.com/share/1BACfASXW1/?mibextid=wwXIfr">
+        <div class="social-icon">
+          <i class="fab fa-facebook-f"></i>
+        </div>
+
+        <div class="social-text">
+          <strong>Facebook</strong>
+          <span>Like our page</span>
+        </div>
+
+        <i class="fa-solid fa-chevron-right arrow"></i>
+      </a>
+
+    </section>
+
+    <div class="bottom-decoration">
+      <span></span>
+      <i class="fa-solid fa-heart"></i>
+      <span></span>
+    </div>
+
+  </main>
 
 </body>
 </html>
