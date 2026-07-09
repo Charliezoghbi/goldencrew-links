@@ -120,6 +120,7 @@ body::after {
   height: 1.5px;
   background: var(--gold);
   position: relative;
+  flex-shrink: 0;
 }
 
 .title-row span::after {
@@ -147,6 +148,7 @@ h1 {
   font-weight: 800;
   letter-spacing: 1px;
   line-height: 1.1;
+  white-space: nowrap;
 }
 
 .subtitle {
@@ -193,6 +195,7 @@ h1 {
   padding: 18px 22px;
   box-shadow: 0 12px 22px rgba(5, 11, 53, 0.25);
   transition: 0.25s ease;
+  column-gap: 0;
 }
 
 .social:hover {
@@ -232,6 +235,7 @@ h1 {
 .arrow {
   color: var(--gold-light);
   font-size: 26px;
+  justify-self: end;
 }
 
 .bottom-decoration {
@@ -279,15 +283,17 @@ h1 {
   }
 
   .title-row {
-    gap: 8px;
+    gap: 0;
   }
 
   .title-row span {
-    width: 30px;
+    display: none;
   }
 
   h1 {
     font-size: 34px;
+    text-align: center;
+    white-space: normal;
   }
 
   .subtitle {
@@ -296,7 +302,7 @@ h1 {
 
   .social {
     min-height: 78px;
-    grid-template-columns: 58px 1fr 22px;
+    grid-template-columns: 58px 1fr 24px;
     padding: 14px 16px;
     border-radius: 17px;
   }
