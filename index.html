@@ -8,118 +8,102 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family:Arial, sans-serif;
 }
 
-body {
-  min-height: 100vh;
-  background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 25px;
+body{
+  min-height:100vh;
+  background:#f5f5f5;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:25px;
 }
 
-.card {
-  width: 100%;
-  max-width: 420px;
-  background: white;
-  border-radius: 24px;
-  padding: 35px 25px;
-  text-align: center;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-  border: 2px solid #d4af37;
+.card{
+  width:100%;
+  max-width:420px;
+  background:white;
+  border-radius:24px;
+  padding:35px 25px;
+  text-align:center;
+  box-shadow:0 15px 40px rgba(0,0,0,0.15);
 }
 
-.logo {
-  font-size: 42px;
-  color: #d4af37;
-  margin-bottom: 12px;
+.logo{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:18px;
 }
 
-h1 {
-  color: #d4af37;
-  font-size: 32px;
-  letter-spacing: 3px;
+h1{
+  color:#111;
+  font-size:30px;
+  letter-spacing:2px;
 }
 
-.subtitle {
-  color: #222;
-  letter-spacing: 4px;
-  margin: 8px 0 28px;
-  font-size: 14px;
+.subtitle{
+  color:#666;
+  margin:8px 0 28px;
+  font-size:15px;
 }
 
-.line {
-  width: 80px;
-  height: 3px;
-  background: #d4af37;
-  margin: 0 auto 28px;
-  border-radius: 10px;
+.socials{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
 }
 
-.connect {
-  font-size: 18px;
-  letter-spacing: 3px;
-  margin-bottom: 25px;
-  color: #222;
+.social{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  text-decoration:none;
+  padding:15px 18px;
+  border-radius:16px;
+  color:white;
+  transition:0.25s;
 }
 
-.socials {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+.social:hover{
+  transform:translateY(-3px);
 }
 
-.social {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  text-decoration: none;
-  background: #f8f8f8;
-  padding: 15px 18px;
-  border-radius: 16px;
-  color: #222;
-  transition: 0.25s;
-  border: 1px solid #eee;
+.icon{
+  font-size:26px;
+  width:35px;
 }
 
-.social:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+.linkedin{
+  background:#0A66C2;
 }
 
-.icon {
-  width: 52px;
-  height: 52px;
-  border-radius: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 26px;
+.instagram{
+  background:linear-gradient(135deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
 }
 
-.linkedin { background: #0A66C2; }
-.instagram { background: linear-gradient(135deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5); }
-.facebook { background: #1877F2; }
-
-.text {
-  text-align: left;
+.facebook{
+  background:#1877F2;
 }
 
-.text strong {
-  display: block;
-  font-size: 20px;
+.text{
+  text-align:left;
 }
 
-.text span {
-  color: #b8860b;
-  font-size: 14px;
+.text strong{
+  display:block;
+  font-size:20px;
+}
+
+.text span{
+  font-size:14px;
+  opacity:0.9;
 }
 </style>
 </head>
@@ -127,43 +111,32 @@ h1 {
 <body>
 
 <div class="card">
-  <div class="logo">
-    <i class="fa-solid fa-house-chimney"></i>
-  </div>
 
-  <h1>GOLDEN CREW</h1>
-  <div class="subtitle">PROPERTY MAINTENANCE</div>
+  <img src="goldencrew_logo.png" alt="Golden Crew Logo" class="logo">
 
-  <div class="line"></div>
-
-  <div class="connect">CONNECT WITH US</div>
+  <h1>Golden Crew</h1>
+  <div class="subtitle">Property Maintenance</div>
 
   <div class="socials">
 
-    <a class="social" href="https://www.linkedin.com/in/john-r-465703a4?utm_source=share_via&utm_content=profile&utm_medium=member_ios">
-      <div class="icon linkedin">
-        <i class="fab fa-linkedin-in"></i>
-      </div>
+    <a class="social linkedin" href="https://www.linkedin.com/in/john-r-465703a4?utm_source=share_via&utm_content=profile&utm_medium=member_ios">
+      <i class="fab fa-linkedin-in icon"></i>
       <div class="text">
         <strong>LinkedIn</strong>
         <span>Connect with us</span>
       </div>
     </a>
 
-    <a class="social" href="https://www.instagram.com/goldencrewpropertymaintenance?igsh=MTF6MGZzeDF6cGJwaQ==">
-      <div class="icon instagram">
-        <i class="fab fa-instagram"></i>
-      </div>
+    <a class="social instagram" href="https://www.instagram.com/goldencrewpropertymaintenance?igsh=MTF6MGZzeDF6cGJwaQ==">
+      <i class="fab fa-instagram icon"></i>
       <div class="text">
         <strong>Instagram</strong>
         <span>Follow our journey</span>
       </div>
     </a>
 
-    <a class="social" href="https://www.facebook.com/share/1BACfASXW1/?mibextid=wwXIfr">
-      <div class="icon facebook">
-        <i class="fab fa-facebook-f"></i>
-      </div>
+    <a class="social facebook" href="https://www.facebook.com/share/1BACfASXW1/?mibextid=wwXIfr">
+      <i class="fab fa-facebook-f icon"></i>
       <div class="text">
         <strong>Facebook</strong>
         <span>Like our page</span>
@@ -171,6 +144,7 @@ h1 {
     </a>
 
   </div>
+
 </div>
 
 </body>
